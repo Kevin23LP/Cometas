@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fontpopins{
+    font-family: "Poppins", serif;
+}
+header{
+    width: 100%;
+}
+.navconeiner{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
+}
+.linksbar{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.logobox{
+    display: flex;
+    gap: 5px;
+}
+.logobox h1{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.logobox img{
+    width: 50px;
+}
+.linka{
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color ease-out .3s;
+}
+.linka:hover{
+    color: rgb(250, 182, 56);
+}
+.navcta{
+    padding: 15px;
+    background-color: rgb(250, 182, 56);
+    border-radius: 200px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all ease-out .3s;
+}
+.navcta:hover{
+    background-color: yellow;
+}
+
+.herobox{
+width: 100%;
+
+margin-top: 100px;
+
+}
+.herofrase{
+    text-align: center;
+}
+.herofrase h4{
+    background-color: lightskyblue;
+    display: inline-block;
+    border-radius: 200px;
+    padding: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
+    animation: titlecolorchanging 4s ease-out infinite;
+}
+@keyframes titlecolorchanging{
+    50%{
+        background-color: blanchedalmond;
+        box-shadow: 0px 10px 16px 0px blanchedalmond;
+    }
+}
+.txtimgbox{
+    width: 90%;
+    margin: auto;
+    background-color: lightblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+.herodivtxt{
+    width: 50%;
+}
+.herodivimg{
+    width: 50%;
+    align-content: center;
+}
+.herodivimg img{
+    width: 500px;
+    border-radius: 10px;
+}
+.herodivtxt h1{
+    font-size: 40px;
+}
+.titlegraded{
+    background-image: linear-gradient(45deg, orchid, rgb(91, 91, 214));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.ctahero{
+    display: inline-block;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 200px;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all ease-out .3s;
+}
+.ctahero:hover{
+    background-color: rgb(230, 196, 156);
+    color: white;
+}
+.aboutusconteiner{
+    width: 95%;
+    margin: auto;
+
+}
+.aboutustxtyimgdivided{
+    background-color: lightcyan;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
+}
+.imgdivaboutus{
+    width: 50%;
+}
+.menuiconav{
+    display: none;
+}
+.imgdivaboutus img{
+    width: 100%;
+}
+.txtaboutusintro{
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.carddefine{
+    width: 300px;
+    background-image: linear-gradient(90deg, orchid, rgb(186, 224, 255));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
+}
+.imgcard{
+    width: 40%;
+}
+.imgcard img{
+    width: 80px;
+}
+.cardsbox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.definetitle{
+    text-align: center;
+}
+.definetitle h1{
+    background-color: lightgreen;
+    display: inline-block;
+    border-radius: 200px;
+    padding: 10px;
+}
+.definecontainer{
+    padding: 50px 0;
+}
+.colorcard2{
+    background-image: linear-gradient(90deg, rgb(171, 255, 171), rgb(255, 255, 162));
+}
+.colorcard3{
+    background-image: linear-gradient(90deg, rgb(171, 245, 255), rgb(255, 175, 202));
+}
+.colorcard4{
+    background-image: linear-gradient(90deg, rgb(230, 120, 120), rgb(255, 175, 202));
+}
+.colorcard5{
+    background-image: linear-gradient(90deg, rgb(204, 120, 230), rgb(255, 198, 175));
+}
+.servicesconteinerall{
+    background-image: linear-gradient(45deg, white, rgb(193, 231, 255));
+    padding: 50px;
+}
+.servicestxttitle{
+    text-align: center;
+}
+.servicecarddata{
+    width: 300px;
+    text-align: center;
+  
+    padding: 10px;
+}
+.serviceimg{
+    width: 100%;
+}
+.serviceimg img{
+    width: 100px;
+}
+.cardscontener{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 50px 0;
+}
+.fimgdiv{
+    text-align: center;
+}
+.fimgdiv img{
+    width: 200px;
+}
+footer p{
+    color: white;
+}
+.wasaplogo{
+    position: fixed;
+    width: 50px;
+    right: 50px;
+    bottom: 50px;
+    background-color: lightgreen;
+    border-radius: 100%;
+    animation: flotaw 3s ease-out infinite;
+}
+.wasaplogo img{
+    width: 100%;
+}
+@keyframes flotaw {
+    50%{
+        transform: translateY(20px);
+    }
+}
+.menuonclickwindow{
+    display: none;
+}
+@media (max-width: 768px) {
+    .linksbar{
+        display: none;
+    }
+    .txtimgbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .herodivimg{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    }
+    .herodivtxt{
+        text-align: center;
+        width: 100%;
+    }
+    .aboutusconteiner{
+        margin-top: 40px;
+    }
+    .aboutustxtyimgdivided{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgdivaboutus{
+        width: 100%;
+    }
+    .txtaboutusintro{
+        width: 100%;
+    }
+    .txtaboutusintro p{
+        font-size: 20px;
+    }
+    .cardsbox{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cardscontener{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    
+   
+}
+@media (max-width:425px) {
+    .herodivimg img{
+        width: 100%;
+    }
+    .cardsbox{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .carddefine{
+        width: 100%;
+      
+    }
+    .cardscontener{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navconeiner{
+        padding: 0 10px;
+    }
+}
+@media (max-width:320px) {
+   .servicesconteinerall{
+    padding: 0;
+   }
+   .herodivtxt h1{
+    font-size: 30px;
+   }
+}
