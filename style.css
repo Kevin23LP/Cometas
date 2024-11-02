@@ -91,16 +91,17 @@ margin-top: 100px;
     align-items: center;
     padding: 20px;
     margin-top: 30px;
+    overflow: hidden;
 }
 .herodivtxt{
     width: 50%;
 }
 .herodivimg{
     width: 50%;
-    align-content: center;
+    overflow: hidden;
 }
 .herodivimg img{
-    width: 500px;
+    width: 100%;
     border-radius: 10px;
 }
 .herodivtxt h1{
@@ -166,6 +167,9 @@ margin-top: 100px;
 }
 .imgcard img{
     width: 80px;
+}
+.txtincardserv{
+    width: 60%;
 }
 .cardsbox{
     width: 100%;
@@ -331,4 +335,65 @@ footer p{
    .herodivtxt h1{
     font-size: 30px;
    }
+}
+@media (max-width: 1024px) {
+    .herodivimg img{
+        width: 100%;
+    }
+}
+@media (min-width: 1920px) {
+    .logobox h1{
+        width: 50px;
+    }
+    .linka{
+        font-size: 25px;
+    }
+    .navcta{
+        font-size: 25px;
+    }
+    .herofrase{
+        font-size: 25px;
+    }
+    .herodivtxt h1{
+        font-size: 60px;
+    }
+    .herodivtxt p{
+        font-size: 24px;
+    }
+    .ctahero{
+        font-size: 20px;
+    }
+    .aboutustitlediv{
+        font-size: 50px;
+    }
+    .txtaboutusintro h1{
+        font-size: 40px;
+    }
+    .txtaboutusintro p{
+        font-size: 25px;
+    }
+    .definetitle h1{
+        font-size: 30px;
+    }
+    .carddefine{
+        width: 500px;
+    }
+    .carddefine p{
+        font-size: 25px;
+    }
+    .servicestxttitle h1{
+        font-size: 40px;
+    }
+    .servicecarddata h4{
+        font-size: 25px;
+    }
+    .servicecarddata p{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 25px;
+    }
+    .wasaplogo{
+        width: 100px;
+    }
 }
