@@ -241,7 +241,26 @@ footer h4{
     50%{background-color: antiquewhite;}
 }
 
-
+.wasaplogo{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: lightgreen;
+    border-radius: 100%;
+    transition: all ease-out .3s;
+    animation: wasapflota 4s ease-out infinite;
+}
+@keyframes wasapflota {
+    50%{
+        transform: translateY(20px);
+    }
+}
+.wasaplogo:hover{
+    background-color: rgb(173, 243, 173);
+}
+.wasaplogo img{
+    width: 50px;
+}
 
 
 
