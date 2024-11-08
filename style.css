@@ -1,399 +1,332 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.fontpopins{
-    font-family: "Poppins", serif;
+.monse{
+    font-family: "Montserrat", serif;
+}
+body{
+    background-color: whitesmoke;
 }
 header{
-    width: 100%;
-}
-.navconeiner{
     display: flex;
     height: 80px;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    position: fixed;
+    padding: 0px 50px;
     width: 100%;
-    top: 0;
-    background-color: white;
-    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
+    align-items: center;
+    border-bottom: 1px solid black;
 }
-.linksbar{
-    display: flex;
-    list-style: none;
-    gap: 40px;
+.burguer{
+    display: none;
 }
 .logobox{
     display: flex;
-    gap: 5px;
-}
-.logobox h1{
-    font-weight: bolder;
-    font-size: 30px;
+    align-items: center;
 }
 .logobox img{
     width: 50px;
 }
-.linka{
-    color: black;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color ease-out .3s;
+.linksbox{
+    display: flex;
+    gap: 30px;
+    list-style:none;
 }
-.linka:hover{
-    color: rgb(250, 182, 56);
+.linknav{
+    text-decoration: none;
+    color: black;
+}
+.linknav:hover{
+    color: rgb(23, 20, 151);
 }
 .navcta{
-    padding: 15px;
-    background-color: rgb(250, 182, 56);
-    border-radius: 200px;
-    color: black;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    background-color: rgb(23, 20, 151);
+    padding: 10px;
+    border-radius: 200px;
     transition: all ease-out .3s;
 }
 .navcta:hover{
-    background-color: yellow;
+    background-color: rgb(73, 81, 190);
+    
 }
-
-.herobox{
-width: 100%;
-
-margin-top: 100px;
-
+.herocontainer{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
 }
-.herofrase{
+.h3herotxt{
     text-align: center;
 }
-.herofrase h4{
-    background-color: lightskyblue;
+.h3herotxt h3{
     display: inline-block;
-    border-radius: 200px;
+    
+    font-weight: 400;
+    font-size: 17px;
+    background-color: lightgreen;
     padding: 10px;
-    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
-    animation: titlecolorchanging 4s ease-out infinite;
-}
-@keyframes titlecolorchanging{
-    50%{
-        background-color: blanchedalmond;
-        box-shadow: 0px 10px 16px 0px blanchedalmond;
-    }
-}
-.txtimgbox{
-    width: 90%;
-    margin: auto;
-    background-color: lightblue;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-top: 30px;
-    overflow: hidden;
-}
-.herodivtxt{
-    width: 50%;
-}
-.herodivimg{
-    width: 50%;
-    overflow: hidden;
-}
-.herodivimg img{
-    width: 100%;
-    border-radius: 10px;
-}
-.herodivtxt h1{
-    font-size: 40px;
-}
-.titlegraded{
-    background-image: linear-gradient(45deg, orchid, rgb(91, 91, 214));
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-.ctahero{
-    display: inline-block;
-    background-color: bisque;
-    padding: 15px;
     border-radius: 200px;
-    color: black;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: all ease-out .3s;
+    box-shadow: 0px 3px 20px 1px pink;
 }
-.ctahero:hover{
-    background-color: rgb(230, 196, 156);
-    color: white;
-}
-.aboutusconteiner{
-    width: 95%;
-    margin: auto;
+.h1herotxt h1{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: "Hubot Sans", sans-serif;
 
-}
-.aboutustxtyimgdivided{
-    background-color: lightcyan;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
-}
-.imgdivaboutus{
-    width: 50%;
-}
-.menuiconav{
-    display: none;
-}
-.imgdivaboutus img{
-    width: 100%;
-}
-.txtaboutusintro{
-    width: 50%;
-    padding: 0px 10px;
-}
-
-.carddefine{
-    width: 300px;
-    background-image: linear-gradient(90deg, orchid, rgb(186, 224, 255));
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    height: 100px;
-    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.1);
-}
-.imgcard{
-    width: 40%;
-}
-.imgcard img{
-    width: 80px;
-}
-.txtincardserv{
-    width: 60%;
-}
-.cardsbox{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 20px;
+    font-style: normal;
+    color: rgb(48, 39, 39);
     margin-top: 20px;
 }
-.definetitle{
+.pherotxt p{
+    padding: 0 300px;
+    margin-top: 20px;
+    color: rgb(160, 153, 153);
+    font-weight: 500;
+}
+.herocta{
+    background-color: rgb(23, 20, 151);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    transition: all ease-out .3s;
+}
+.herocta:hover{
+    background-color: lightskyblue;
+}
+.cardshero{
+    width: 300px;
+
     text-align: center;
 }
-.definetitle h1{
-    background-color: lightgreen;
+.cardshero img{
+    width: 100px;
+}
+.cartasdehero{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: rgb(221, 215, 215);
+}
+.cardsherotxt h2{
+    font-weight: 300;
+}
+.aboutusconteinerall{
+    width: 100%;
+    padding: 50px 0;
+   background-color: aliceblue;
+}
+.h5abouttxt{
+    text-align: center;
+}
+.h5abouttxt h5{
+    color: lightskyblue;
+    font-size: 17px;
+    font-weight: 400;
+}
+.h1abouttxt{
+    text-align: center;
+}
+.aboutcontent{
+    width: 70%;
+    margin: auto;
+  
+}
+.imgaboutbox{
+    width: 50%;
+}
+.imgaboutbox img{
+    width: 100%;
+}
+.txtaboutbox{
+    width: 50%;
+}
+.aboutlitlecard{
+    background-color: antiquewhite;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.aboutlitlecard h6{
+    font-size: 18px;
+    font-weight: 300;
+}
+.txtimgbox{
+    display: flex;
+    align-items: center;
+}
+.aboutcard img{
+    width: 70px;
+}
+.cardsonabout{
+    display: flex;
+    gap: 10px;
+}
+.h1abouttxtinp{
+    background-image: linear-gradient(90deg, orchid, rgb(255, 74, 104));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 500;
+    position: relative;
+}
+.cajadeservices{
+    display: flex;
+    gap: 10px;
+}
+.caja1services{
+    width: 50%;
+    background-image: linear-gradient(45deg, rgb(255, 236, 240), rgb(252, 194, 204));
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.caja2services{
+    width: 50%;
+    background-image: linear-gradient(90deg, rgb(255, 202, 253), rgb(233, 177, 231) );
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+.caja3services{
+    background-image: linear-gradient(90deg, rgb(212, 238, 255), rgb(167, 218, 250));
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.servconteinerall{
+    padding: 50px 0;
+
+    width: 70%;
+    margin: auto;
+}
+.servtxth1{
+    padding-bottom: 30px;
+}
+.servtxth1 h1{
+    background-image: linear-gradient(90deg, rgb(59, 162, 226), violet);
     display: inline-block;
+    color: white;
     border-radius: 200px;
     padding: 10px;
 }
-.definecontainer{
-    padding: 50px 0;
-}
-.colorcard2{
-    background-image: linear-gradient(90deg, rgb(171, 255, 171), rgb(255, 255, 162));
-}
-.colorcard3{
-    background-image: linear-gradient(90deg, rgb(171, 245, 255), rgb(255, 175, 202));
-}
-.colorcard4{
-    background-image: linear-gradient(90deg, rgb(230, 120, 120), rgb(255, 175, 202));
-}
-.colorcard5{
-    background-image: linear-gradient(90deg, rgb(204, 120, 230), rgb(255, 198, 175));
-}
-.servicesconteinerall{
-    background-image: linear-gradient(45deg, white, rgb(193, 231, 255));
-    padding: 50px;
-}
-.servicestxttitle{
-    text-align: center;
-}
-.servicecarddata{
-    width: 300px;
-    text-align: center;
-  
-    padding: 10px;
-}
-.serviceimg{
-    width: 100%;
-}
-.serviceimg img{
-    width: 100px;
-}
-.cardscontener{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  
-}
 footer{
-    background-color: black;
+    background-color: rgb(20, 19, 19);
     text-align: center;
     padding: 50px 0;
 }
-.fimgdiv{
-    text-align: center;
-}
-.fimgdiv img{
-    width: 200px;
+footer img{
+    width: 150px;
 }
 footer p{
     color: white;
 }
-.wasaplogo{
-    position: fixed;
-    width: 50px;
-    right: 50px;
-    bottom: 50px;
-    background-color: lightgreen;
-    border-radius: 100%;
-    animation: flotaw 3s ease-out infinite;
+footer h4{
+    background-color: lightskyblue;
+    padding: 10px;
+    border-radius: 220px;
+    margin-top: 20px;
+    animation: nosexd 4s ease-out infinite;
 }
-.wasaplogo img{
-    width: 100%;
+@keyframes nosexd{
+    50%{background-color: antiquewhite;}
 }
-@keyframes flotaw {
-    50%{
-        transform: translateY(20px);
-    }
-}
-.menuonclickwindow{
-    display: none;
-}
-@media (max-width: 768px) {
-    .linksbar{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .linknav{
         display: none;
+    }
+    header{
+        padding: 0;
+    }
+    .logobox{
+
+    }
+    .logobox img{
+        width: 30px;
+    }
+    .logobox h1{
+        font-size: 30px;
+    }
+    .h1herotxt h1{
+        font-size: 40px;
+    }
+    .pherotxt p{
+        padding: 0 10px;
+    }
+    .cartasdehero{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .cardshero{
+        width: 100%;
     }
     .txtimgbox{
         display: flex;
         flex-direction: column;
     }
-    .herodivimg{
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    }
-    .herodivtxt{
-        text-align: center;
+    .imgaboutbox{
         width: 100%;
     }
-    .aboutusconteiner{
-        margin-top: 40px;
+    .txtaboutbox{
+        width: 100%;
+        padding: 0 10px;
     }
-    .aboutustxtyimgdivided{
-        display: flex;
-        flex-direction: column;
-    }
-    .imgdivaboutus{
+    .aboutcontent{
         width: 100%;
     }
-    .txtaboutusintro{
-        width: 100%;
-    }
-    .txtaboutusintro p{
-        font-size: 20px;
-    }
-    .cardsbox{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .cardscontener{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-   
-    
-   
-}
-@media (max-width:425px) {
-    .herodivimg img{
-        width: 100%;
-    }
-    .cardsbox{
+    .cardsonabout{
         display: flex;
         flex-direction: column;
         
     }
-    .carddefine{
+    .aboutlitlecard{
         width: 100%;
-      
     }
-    .cardscontener{
+    .cajadeservices{
         display: flex;
         flex-direction: column;
-        text-align: center;
-    }
-    .navconeiner{
-        padding: 0 10px;
-    }
-}
-@media (max-width:320px) {
-   .servicesconteinerall{
-    padding: 0;
-   }
-   .herodivtxt h1{
-    font-size: 30px;
-   }
-}
-@media (max-width: 1024px) {
-    .herodivimg img{
         width: 100%;
     }
-}
-@media (min-width: 1920px) {
-    .logobox h1{
-        width: 50px;
+    .caja1services{
+        width: 100%;
     }
-    .linka{
-        font-size: 25px;
+    .caja2services{
+        width: 100%;
+    }
+    .caja3services{
+        width: 100%;
+    }
+    .servconteinerall{
+        width: 100%;
+        padding: 50px 10px;
+        
     }
     .navcta{
-        font-size: 25px;
-    }
-    .herofrase{
-        font-size: 25px;
-    }
-    .herodivtxt h1{
-        font-size: 60px;
-    }
-    .herodivtxt p{
-        font-size: 24px;
-    }
-    .ctahero{
-        font-size: 20px;
-    }
-    .aboutustitlediv{
-        font-size: 50px;
-    }
-    .txtaboutusintro h1{
-        font-size: 40px;
-    }
-    .txtaboutusintro p{
-        font-size: 25px;
-    }
-    .definetitle h1{
-        font-size: 30px;
-    }
-    .carddefine{
-        width: 500px;
-    }
-    .carddefine p{
-        font-size: 25px;
-    }
-    .servicestxttitle h1{
-        font-size: 40px;
-    }
-    .servicecarddata h4{
-        font-size: 25px;
-    }
-    .servicecarddata p{
-        font-size: 20px;
-    }
-    footer p{
-        font-size: 25px;
-    }
-    .wasaplogo{
-        width: 100px;
+        font-size: 13px;
     }
 }
