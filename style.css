@@ -47,6 +47,7 @@ header{
     padding: 10px;
     border-radius: 200px;
     transition: all ease-out .3s;
+
 }
 .navcta:hover{
     background-color: rgb(73, 81, 190);
@@ -278,16 +279,15 @@ footer h4{
         display: none;
     }
     header{
-        padding: 0;
+        padding: 30px;
     }
-    .logobox{
-
-    }
+    
     .logobox img{
-        width: 30px;
+        width: 50px;
     }
     .logobox h1{
         font-size: 30px;
+        display: none;
     }
     .h1herotxt h1{
         font-size: 40px;
